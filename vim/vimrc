@@ -19,3 +19,4 @@ filetype plugin on
 set wildmode=longest,list,full
 set wildmenu
 
+" set foldmethod=syntax
