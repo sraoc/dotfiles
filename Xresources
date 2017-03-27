@@ -1,0 +1,188 @@
+!! Solarized color scheme from
+!!    /home/krishna/dev/solarized/xresources-colors-solarized/Xresources
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+xterm*background:            S_base03
+xterm*foreground:            S_base00
+!xterm*background:            #000000
+!xterm*foreground:            S_green
+xterm*fading:                40
+xterm*fadeColor:             S_base03
+xterm*cursorColor:           S_green
+xterm*pointerColorBackground:S_base01
+xterm*pointerColorForeground:S_base1
+
+!! black dark/light
+xterm*color0:                S_base02
+xterm*color8:                S_base03
+
+!! red dark/light
+xterm*color1:                S_red
+xterm*color9:                S_orange
+
+!! green dark/light
+xterm*color2:                S_green
+xterm*color10:               S_base01
+
+!! yellow dark/light
+xterm*color3:                S_yellow
+xterm*color11:               S_base00
+
+!! blue dark/light
+xterm*color4:                S_blue
+xterm*color12:               S_base0
+
+!! magenta dark/light
+xterm*color5:                S_magenta
+xterm*color13:               S_violet
+
+!! cyan dark/light
+xterm*color6:                S_cyan
+xterm*color14:               S_base1
+
+!! white dark/light
+xterm*color7:                S_base2
+xterm*color15:               S_base3
+
+! Use a nice truetype font and size by default... 
+!xterm*faceName: Inconsolata
+xterm*faceName: Ubunut Mono
+xterm*faceSize: 12
+xterm*scaleHeight: 1
+!xterm.letterSpace: -4
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+! I like a LOT of scrollback...
+xterm*savelines: 4096
+
+! double-click to select whole URLs :D
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! DOS-box colours...
+! xterm*foreground: rgb:a8/a8/a8
+! xterm*background: rgb:00/00/00
+! xterm*color0: rgb:00/00/00
+! xterm*color1: rgb:a8/00/00
+! xterm*color2: rgb:00/a8/00
+! xterm*color3: rgb:a8/54/00
+! xterm*color4: rgb:00/00/a8
+! xterm*color5: rgb:a8/00/a8
+! xterm*color6: rgb:00/a8/a8
+! xterm*color7: rgb:a8/a8/a8
+! xterm*color8: rgb:54/54/54
+! xterm*color9: rgb:fc/54/54
+! xterm*color10: rgb:54/fc/54
+! xterm*color11: rgb:fc/fc/54
+! xterm*color12: rgb:54/54/fc
+! xterm*color13: rgb:fc/54/fc
+! xterm*color14: rgb:54/fc/fc
+! xterm*color15: rgb:fc/fc/fc
+
+! right hand side scrollbar...
+! xterm*rightScrollBar: true
+xterm*ScrollBar: false
+
+! Xterm window size
+xterm*geometry: 80x24+0+0
+
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: true
+
+! Use CLIPBOARD buffer
+xterm*VT100.Translations: #override \
+    Shift <Key>Insert:    insert-selection(SELECT) \n\
+    Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+!XTerm*title: echo -ne "\033]0;$BASH_COMMAND\007"
+!
+!URxvt settings start from here
+
+Xft.dpi:    96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+URxvt.scrollBar:    false
+URxvt.depth:        32
+URxvt.transparent:  false
+URxvt.fading:       0
+URxvt.tintColor:     S_base03
+URxvt.shading:       80 
+URxvt.intensityStyles:  false
+
+URxvt.urgentOnBell: true
+URxvt.visualBell:   true
+URxvt.loginShell:   true
+URxvt.saveLines:    1024
+URxvt.internalBorder:   3
+URxvt.lineSpace:    0
+
+!URxvt.font: xft:xos4 Terminus:size=15
+URxvt.font: xft:Latin Modern Mono:antialias=true:size=14
+URxvt.boldFont: xft:Latin Modern Mono:antialias=true:size=14
+!URxvt.boldFont: xft:xos4 Terminus:antialias=true:size=16
+URXvt.allow_bold:   false
+URxvt.letterSpace:  -1
+
+URxvt*background:            S_base03
+URxvt*foreground:            S_base00
+!URxvt*background:            #000000
+!URxvt*foreground:            S_green
+URxvt*fading:                40
+URxvt*fadeColor:             S_base03
+URxvt*cursorColor:           S_green
+URxvt*pointerColorBackground:S_base01
+URxvt*pointerColorForeground:S_base1
+
+! black dark/light
+URxvt*color0:                S_base02
+URxvt*color8:                S_base03
+
+! red dark/light
+URxvt*color1:                S_red
+URxvt*color9:                S_orange
+
+! green dark/light
+URxvt*color2:                S_green
+URxvt*color10:               S_base01
+
+! yellow dark/light
+URxvt*color3:                S_yellow
+URxvt*color11:               S_base00
+
+! blue dark/light
+URxvt*color4:                S_blue
+URxvt*color12:               S_base0
+
+! magenta dark/light
+URxvt*color5:                S_magenta
+URxvt*color13:               S_violet
+
+! cyan dark/light
+URxvt*color6:                S_cyan
+URxvt*color14:               S_base1
+
+! white dark/light
+URxvt*color7:                S_base2
+URxvt*color15:               S_base3
+
