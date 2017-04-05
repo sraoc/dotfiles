@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/tmp/llvm-pass-skeleton/build/skeleton'
 let g:netrw_dirhist_2='/home/arch/git/dotfiles/.git'
+let g:netrw_dirhist_3='/home/arch/acads/sem6/pa/ass4/llvm-nullptr/nullp'
